@@ -1,0 +1,17 @@
+---
+title: "Practical 1.1"
+author: "Alfie Swinton"
+---
+
+I will calculate the total number of genes with regionally elevated expression in the cerebral cortex, basal ganglia, thalamus and hypothalamus regions in human, pig and mouse.
+
+```{r}
+human_genes <- sum(180, 83, 57, 110)
+print(paste("the number of genes with regionally elevated expression in the human forebrain is", human_genes))
+pig_genes <- sum(109, 157, 31, 45)
+print(paste("the number of genes with regionally elevated expression in the pig forebrain is", pig_genes))
+mouse_genes <- sum(55, 185, 60, 98)
+print(paste("the number of genes with regionally elevated expression in the mouse forebrain is", mouse_genes))
+```
+
+We can see that the species with the highest number of genes with regionally elevated expression in the forebrain is the human.

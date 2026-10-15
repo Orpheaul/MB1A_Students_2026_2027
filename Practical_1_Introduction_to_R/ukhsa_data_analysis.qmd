@@ -1,0 +1,26 @@
+---
+title: "Data set"
+author: "Alfie Swinton"
+---
+
+library(tidyverse)
+library(gt)
+
+make a table for covid 19 cases
+```{r}
+cvdcases <- read_csv("ukhsa-chart-download.csv")
+gt(cvdcases)
+```
+
+make a plot of the data 
+```{r}
+ggplot(cvdcases, aes(
+  x = date,
+  y = metric_value
+)) + 
+  geom_line(colour = "green") +
+  xlab("Date") + 
+  ylab("Cases per 100000")+
+  ggtitle("Cases of Covid-19 per 100000 over time")
+
+```

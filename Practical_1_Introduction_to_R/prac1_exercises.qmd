@@ -3,6 +3,9 @@ title: "Parts 3 and 4"
 author: "Alfie Swinton"
 ---
 
+library(tidyverse)
+library(gt)
+
 rounding pi
 ```{r}
 round(3.14159)
@@ -41,3 +44,29 @@ num_cells_after1 <- 1432
 num_cells_after2 <- 7543
 ```
 
+vectors
+```{r}
+cell_ID_vec <- c(cell_ID1, cell_ID2)
+treated_vec <- c(treated1, treated2)
+num_cells_before_vec <- c(num_cells_before1, num_cells_before2)
+num_cells_after_vec <- c(num_cells_after1, num_cells_after2)
+```
+
+vector exercise 
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+fourth_pet <- all_my_pets[4]
+print(fourth_pet)
+```
+
+table of data
+```{r}
+my_table <- tibble(
+  Cell_ID = cell_ID_vec,
+  Treated = treated_vec,
+  Num_cells_before = num_cells_before_vec,
+  Num_cells_after = num_cells_after_vec
+)
+
+gt(my_table)
+```

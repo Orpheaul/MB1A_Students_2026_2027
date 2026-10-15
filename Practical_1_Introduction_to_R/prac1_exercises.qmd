@@ -1,0 +1,43 @@
+---
+title: "Parts 3 and 4"
+author: "Alfie Swinton"
+---
+
+rounding pi
+```{r}
+round(3.14159)
+```
+repeating numbers
+```{r}
+print(rep(5, 7))
+```
+repeating numbers again
+```{r}
+print(rep(x=5, times= 7))
+```
+types of variables
+```{r}
+#define variables
+numeric_variable <- 5
+character_variable <- "hello world"
+logic_variable <- TRUE
+#print variables and define their classes
+print(numeric_variable)
+print(class(numeric_variable))
+print(character_variable)
+print(class(character_variable))
+print(logic_variable)
+print(class(logic_variable))
+```
+cells and radiation experiment variables 
+```{r}
+cell_ID1 <- "CX1"
+cell_ID2 <- "CX2"
+treated1 <- TRUE
+treated2 <- FALSE
+num_cells_before1 <- 5415
+num_cells_before2 <- 8123
+num_cells_after1 <- 1432
+num_cells_after2 <- 7543
+```
+
